@@ -19,6 +19,9 @@ To be able to use the app with the server<br />
 side you need to have local mongodb server<br />
 on your machine.
 
+Note: Server must run on localhost:3000. Since the app
+proxies to it.
+
 ### `npm install`
 
 To download project dependencies.
