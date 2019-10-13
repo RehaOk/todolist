@@ -48,7 +48,7 @@ const AddTodo = ({dispatch}) => {
           <input type="text" ref={formInput => (input = formInput)} />
           <button className="ui primary button" type="submit">Add Todo</button>
         </div>
-        <div className="ui raised segment" style={{width: 700}}>
+        <div className="ui raised segment px-grid-700">
           <CheckBox onHandleChange={handleChange} label="Monday"/>
           <CheckBox onHandleChange={handleChange} label="Tuesday"/>
           <CheckBox onHandleChange={handleChange} label="Wednesday"/>

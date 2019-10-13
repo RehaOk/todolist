@@ -2,3 +2,15 @@ body {
     box-sizing: content-box;
     padding: 10px;
 }
+
+.px-grid-300 {
+    width: 300px;
+}
+
+.px-grid-700 {
+    width: 700px;
+}
+
+.checkbox-margin{
+    margin-left: 10px;
+}

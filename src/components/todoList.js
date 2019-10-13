@@ -19,7 +19,6 @@ const TodoList = ({ todos, toggleTodo }) => (
 );
 
 const mapStateToProps = store => {
-  console.log('store todos:' + JSON.stringify(store.todos));
   return {todos: store.todos}
 };
 
