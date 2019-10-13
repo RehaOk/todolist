@@ -19,6 +19,10 @@ To be able to use the app with the server<br />
 side you need to have local mongodb server<br />
 on your machine.
 
+### `npm install`
+
+To download project dependencies.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
