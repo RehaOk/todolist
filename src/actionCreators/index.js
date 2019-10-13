@@ -1,10 +1,9 @@
 import * as types from './actionTypes';
 
-let todoId = 0;
-export const addTodo = (todoContent, daysSelected) => {
+export const addTodo = (id, todoContent, daysSelected) => {
     return {
         type: types.ADD_TODO,
-        id: todoId++,
+        id: id,
         payload: todoContent,
         daysSelected: daysSelected
     }
