@@ -1,19 +1,21 @@
-const todoReducer = (state = [], action) => {
+const todoReducer = (store = [], action) => {
     switch (action.type) {
       case 'ADD_TODO':
         console.log(`Added ${action.payload}`);
-        return [...state,
+        console.log(`Added ${JSON.stringify(action.daysSelected)}`);
+        return [...store,
           {
             id: action.id,
             payload: action.payload,
+            daysSelected: action.daysSelected,
             isCompleted: false
           }];       
       case 'TOGGLE_TODO':
-        return state.map(todo =>
+        return store.map(todo =>
           todo.id === action.payload ? { ...todo, isCompleted: !todo.isCompleted } : todo
         )
       default:
-        return state;
+        return store;
     }
 };
   

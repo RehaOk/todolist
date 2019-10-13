@@ -7,13 +7,19 @@ const TodoList = ({ todos, toggleTodo }) => (
   <ul className="ui middle aligned animated ordered list">
     { todos &&
         todos.map(todo => (
-          <Todo onClick={() => toggleTodo(todo.id)} isCompleted={todo.isCompleted} content={todo.payload} />
+          <Todo 
+            onClick={() => toggleTodo(todo.id)}
+            isCompleted={todo.isCompleted}
+            content={todo.payload}
+            daysSelected={todo.daysSelected}
+          />
         ))
     }
   </ul>
 );
 
 const mapStateToProps = store => {
+  console.log('store todos:' + JSON.stringify(store.todos));
   return {todos: store.todos}
 };
 
